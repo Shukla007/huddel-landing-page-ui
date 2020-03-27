@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+body {
+  background-color: rgb(162, 56, 204);
+  background-image: url(images/bg-desktop.svg);
+  opacity: 2;
+  padding: 15px;
+  margin: 0px;
+}
+.p {
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 15px;
+  margin: 10px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  height: 50px;
+  width: 40px;
+  background-color: white;
+  color: rgb(129, 11, 129);
+  margin-left: 25px;
+  font-size: 1.8rem;
+  padding: 15px;
+  border-radius: 50px;
+}
+.heading {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr 1fr);
+  grid-gap: 20px;
+  margin: 10px;
+
+  color: white;
+
+  float: right;
+}
+
+.fa-facebook {
+  border: white 1px solid;
+  padding: 10px;
+  border-radius: 50px;
+}
+.fa-facebook:hover {
+  background-color: white;
+  opacity: 1.5;
+  color: dodgerblue;
+}
+
+.fa-twitter {
+  border: white 1px solid;
+  padding: 10px;
+  border-radius: 50px;
+}
+.fa-twitter:hover {
+  background-color: white;
+  opacity: 1.5;
+  color: dodgerblue;
+}
+
+.fa-instagram {
+  border: white 1px solid;
+  padding: 10px;
+  border-radius: 50px;
+}
+.fa-instagram:hover {
+  background-color: white;
+  opacity: 1.5;
+  color: dodgerblue;
+}
+@media (max-width: 500px) {
+  .container {
+    display: block;
+    font-size: small;
+  }
+  .heading {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .container img {
+    height: 100px;
+    width: auto;
+  }
+  .social {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+}
+
+@media (max-width: 770px) {
+  .container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .a {
+    font-size: 1em;
+  }
+}
